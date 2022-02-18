@@ -1,0 +1,71 @@
+.sidebar {
+    background-color: #000000;
+    overflow: hidden;
+    min-width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 70px;
+        img {
+            height: 40px;
+        }
+    }
+    &__items__link {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        color: #b3b3b3;
+        gap: 15px;
+        width: 100%;
+        transition: all 0.3 ease-in;
+        border-radius: 4px;
+        cursor: pointer;
+
+        span {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &.active {
+            background-color: rgba(140, 140, 140, 0.163);
+            color: white;
+        }
+        &:hover {
+            color: white;
+        }
+    }
+    hr {
+        line-height: 0.1px;
+        height: 0.1px;
+        background-color: #b3b3b3;
+    }
+    &__user__playlist {
+        display: block;
+        flex: 1;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+}

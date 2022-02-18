@@ -1,0 +1,12 @@
+.button-icon-play {
+    svg {
+        font-size: 2.5rem;
+        transition: all .35s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+svg:hover {
+    color: #fff;
+}
