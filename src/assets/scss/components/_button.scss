@@ -1,7 +1,7 @@
 .button-icon-play {
     svg {
         font-size: 2.5rem;
-        transition: all .35s ease;
+        transition: all 0.35s ease;
         &:hover {
             transform: scale(1.1);
         }
@@ -9,4 +9,23 @@
 }
 svg:hover {
     color: #fff;
+}
+
+#play-card.button-play-card {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    padding: 4px;
+    right: 1.3rem;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(1.06);
+        background-color: var(--primary-color);
+        color: #fff;
+    }
 }

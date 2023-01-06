@@ -1,0 +1,24 @@
+.container__sidebar {
+    position: fixed;
+    height: 87vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 270px;
+}
+
+.container__content {
+    margin-left: 270px;
+    padding-left: 12px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 87vh;
+    scroll-behavior: smooth;
+}
+.container__footer {
+    height: 13vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

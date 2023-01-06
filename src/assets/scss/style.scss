@@ -1,35 +1,50 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     color: rgb(255, 255, 255);
     background-color: #121212;
     overflow: hidden;
 }
-.content::-webkit-scrollbar {
-    width: 10px;
+.container__content::-webkit-scrollbar {
+    width: 12px;
 }
 
-/* Track */
-.content::-webkit-scrollbar-track {
+.container__content::-webkit-scrollbar-track {
     background: transparent;
 }
 
-/* Handle */
-.content::-webkit-scrollbar-thumb {
-    background: #888;
+.container__content::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
 }
 
-/* Handle on hover */
-.content::-webkit-scrollbar-thumb:hover {
+.container__content::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-.content {
-    overflow-y: scroll;
-    overflow-x: auto;
-    height: 100%;
-}
 .logo {
     width: 100%;
+}
+.background-login {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }

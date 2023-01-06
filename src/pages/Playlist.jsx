@@ -1,16 +1,17 @@
-import React from 'react';
-import Helmet from '../components/Helmet'
-import Header from '../components/Header'
-import { useParams } from "react-router-dom";
-const Playlist = (props) => {
-    const { slug } = useParams();
+import { Box, Grid } from '@mui/material'
+import CardSection from '../components/sections/CardSection'
+// import MainCard from '../components/cards/MainCard'
+const Playlist = ({ items }) => {
+
     return (
-        <Helmet title="Playlist" >
-            <Header></Header>
-            {slug}
-        </Helmet>
-
-    );
-};
-
+        <Box>
+            <Grid item xl={2} lg={3} md={4} sm={6}>
+                {/* <MainCard item={items[0]} /> */}
+            </Grid>
+            {items && <CardSection items={items} title="Playlist" />}
+        </Box >
+    )
+}
 export default Playlist;
+
+

@@ -1,9 +1,17 @@
-.header {
-    width: 100%;
-    height: 60px;
-    z-index: 6;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    padding: 12px 24px;
+.header__on-scroll {
+    position: fixed !important;
+    top: 0 !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    opacity: 1 !important;
+    padding-left: 36px !important;
+    transition: width 0s, padding 0s;
+    animation: mymove 0.35s ease-out;
+    @keyframes mymove {
+        from {
+            transform: translateY(-50%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
 }

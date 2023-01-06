@@ -1,9 +1,11 @@
 // global
-@import './style';
+@import "./style";
+@import "./variables";
 
 //  components
- @import './components/button';
- @import './components/mainCard';
- @import './components/header';
- @import './components/sidebar';
- @import './components/footer'; 
+@import "./components/layout";
+@import "./components/button";
+@import "./components/mainCard";
+@import "./components/header";
+@import "./components/sidebar";
+@import "./components/footer";

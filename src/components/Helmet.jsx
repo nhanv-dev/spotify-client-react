@@ -5,7 +5,7 @@ const Helmet = props => {
     const title = props.title ? 'Spotify - ' + props.title : 'Spotify';
     document.title = title;
     return (
-        <Box sx={{ width: '100%', height: '100%' }} >
+        <Box sx={{ width: '100%', height: '100%', ...props.style }} >
             {props.children}
         </Box>
     );
